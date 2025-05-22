@@ -1,0 +1,15 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+      navigatingTo="navigatingTo">
+  <StackLayout>
+    <Button text="Agregar Persona" tap="onAddPerson" />
+    <ListView items="{{ persons }}">
+      <ListView.itemTemplate>
+        <StackLayout orientation="horizontal" padding="10">
+          <Label text="{{ name }}" width="60%" />
+          <Label text="{{ age }}" width="20%" />
+          <Button text="🗑️" tap="{{ deletePerson }}" width="20%" />
+        </StackLayout>
+      </ListView.itemTemplate>
+    </ListView>
+  </StackLayout>
+</Page>
