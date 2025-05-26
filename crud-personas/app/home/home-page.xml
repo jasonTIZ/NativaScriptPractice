@@ -1,3 +1,4 @@
+<!-- app/home/home-page.xml -->
 <Page xmlns="http://schemas.nativescript.org/tns.xsd"
       navigatingTo="navigatingTo">
   <StackLayout>

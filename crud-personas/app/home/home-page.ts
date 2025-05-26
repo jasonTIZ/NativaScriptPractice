@@ -1,7 +1,9 @@
 import { EventData, ObservableArray } from '@nativescript/core';
 import { Page } from '@nativescript/core';
 import { Observable } from '@nativescript/core';
-import { Person } from './models/person';
+
+import { Person } from '~/models/person';
+
 import { PersonService } from './services/person.service';
 
 let page: Page;
@@ -38,3 +40,4 @@ export function onAddPerson() {
   };
   service.create(person).then(loadPeople);
 }
+//D:\Moviles\Investigación NativeScript\NativaScriptPractice\crud-personas\app\home\home-page.ts
